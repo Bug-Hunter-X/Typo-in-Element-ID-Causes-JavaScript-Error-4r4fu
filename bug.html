@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    //Attempt to access the non-existent element with an id that has a typo
+    document.getElementById("myDive").innerHTML = "This text replaces the original."; 
+  </script>
+</body>
+</html>
